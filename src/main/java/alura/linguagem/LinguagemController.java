@@ -39,29 +39,4 @@ public class LinguagemController {
         repository.deleteById(id);
     }
 
-//    @PutMapping("/linguagens/{id}")
-//    public String atualizarLinguagem(@PathVariable String id){
-//        repository.
-//    }
-//public LanguageResponse updateLanguage(String id, LanguageUpdateRequest request) {
-//    var result = repository.findById(id);
-//
-//    if(result.isEmpty()) {
-//        throw new LanguageNotFoundException();
-//    }
-//
-//    var language = result.get();
-//    language.setImage(request.getImage());
-//    language.setRanking(request.getRanking());
-//    var saveLanguage = repository.save(language);
-//
-//    return new LanguageResponse(
-//            saveLanguage.getId(),
-//            saveLanguage.getTitle(),
-//            saveLanguage.getImage(),
-//            saveLanguage.getRanking()
-//    );
-//}
-
-
 }

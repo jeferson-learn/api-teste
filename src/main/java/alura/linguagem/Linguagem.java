@@ -3,24 +3,24 @@ package alura.linguagem;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-//@Document(collection = "principaisLinguagens")
-@Document(collection = "linguagem")
+@Document(collection = "principaisLinguagens")
+//@Document(collection = "linguagem")
 public class Linguagem {
 
     @Id
     private String id;
     private String title;
     private String image;
-    private int ranking;
+    private double score;
 
     public Linguagem() {
 
     }
 
-    public Linguagem(String title, String image, int ranking) {
+    public Linguagem(String title, String image, double score) {
         this.title = title;
         this.image = image;
-        this.ranking = ranking;
+        this.score = score;
     }
 
     public String getId() {
@@ -35,7 +35,7 @@ public class Linguagem {
         return image;
     }
 
-    public int getRanking() {
-        return ranking;
+    public double getScore() {
+        return score;
     }
 }
